@@ -1,7 +1,9 @@
 import { Fragment } from "react";
 import type { HospitalRow } from "./CSVUpload";
 
-interface Props { hospitals: HospitalRow[]; }
+interface Props {
+  hospitals: HospitalRow[];
+}
 
 function PctBar({ value }: { value: number }) {
   const color = value >= 85 ? "#36b85c" : value >= 70 ? "#f59e0b" : "#ef4444";
@@ -17,6 +19,7 @@ function PctBar({ value }: { value: number }) {
 
 export function ResponseTimeTable({ hospitals }: Props) {
   const sorted = [...hospitals].sort((a, b) => a.pct_atendidas > b.pct_atendidas ? -1 : 1);
+
   return (
     <div className="bg-card border border-white/8 rounded p-3 h-full">
       <div className="text-[10px] uppercase tracking-widest text-white/50 mb-0.5">Tempo de Resposta das Unidades Hospitalares</div>
@@ -31,7 +34,9 @@ export function ResponseTimeTable({ hospitals }: Props) {
             <div className="text-[10px] text-white/70 py-1.5 border-b border-white/5">{h.hospital}</div>
             <div className="text-[10px] font-mono text-white/60 py-1.5 border-b border-white/5 text-center">{h.tempo_medio}</div>
             <div className="text-[10px] font-mono text-white/60 py-1.5 border-b border-white/5 text-center">{h.mediana}</div>
-            <div className="py-1.5 border-b border-white/5 min-w-[80px]"><PctBar value={h.pct_atendidas} /></div>
+            <div className="py-1.5 border-b border-white/5 min-w-[80px]">
+              <PctBar value={h.pct_atendidas} />
+            </div>
           </Fragment>
         ))}
       </div>

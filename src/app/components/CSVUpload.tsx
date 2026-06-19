@@ -72,29 +72,46 @@ export function CSVUpload({ onData, hasData, onReset }: Props) {
     const file = e.target.files?.[0];
     if (!file) return;
     const text = await file.text();
-    onData({ hospitals: parseHospitals(text), evolution: [] });
+    const hospitals = parseHospitals(text);
+    onData({ hospitals, evolution: [] });
   }
 
   async function handleEvo(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0];
     if (!file) return;
     const text = await file.text();
-    onData({ hospitals: [], evolution: parseEvolution(text) });
+    const evolution = parseEvolution(text);
+    onData({ hospitals: [], evolution });
   }
 
   return (
     <div className="flex items-center gap-2">
       <input ref={hospRef} type="file" accept=".csv" className="hidden" onChange={handleHosp} />
       <input ref={evoRef} type="file" accept=".csv" className="hidden" onChange={handleEvo} />
-      <button onClick={() => hospRef.current?.click()} className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs border border-white/15 text-white/70 hover:text-white hover:border-green-500/50 hover:bg-green-500/10 transition-all">
-        <Upload size={12} />Hospitais CSV
+
+      <button
+        onClick={() => hospRef.current?.click()}
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs border border-white/15 text-white/70 hover:text-white hover:border-green-500/50 hover:bg-green-500/10 transition-all"
+      >
+        <Upload size={12} />
+        Hospitais CSV
       </button>
-      <button onClick={() => evoRef.current?.click()} className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs border border-white/15 text-white/70 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all">
-        <Upload size={12} />Evolução CSV
+
+      <button
+        onClick={() => evoRef.current?.click()}
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs border border-white/15 text-white/70 hover:text-white hover:border-blue-500/50 hover:bg-blue-500/10 transition-all"
+      >
+        <Upload size={12} />
+        Evolução CSV
       </button>
+
       {hasData && (
-        <button onClick={onReset} className="flex items-center gap-1 px-2 py-1.5 rounded text-xs text-red-400 hover:text-red-300 hover:bg-red-500/10 transition-all">
-          <X size={12} />Resetar
+        <button
+          onClick={onReset}
+          className="flex items-center gap-1 px-2 py-1.5 rounded text-xs text-red-400 hover:text-red-300 hover:bg-red-500/10 transition-all"
+        >
+          <X size={12} />
+          Resetar
         </button>
       )}
     </div>

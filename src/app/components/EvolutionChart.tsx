@@ -1,7 +1,9 @@
-import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
+import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer, Legend } from "recharts";
 import type { DayRow } from "./CSVUpload";
 
-interface Props { data: DayRow[]; }
+interface Props {
+  data: DayRow[];
+}
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
@@ -24,9 +26,15 @@ export function EvolutionChart({ data }: Props) {
     <div className="bg-card border border-white/8 rounded p-3 h-full">
       <div className="text-[10px] uppercase tracking-widest text-white/50 mb-0.5">Evolução das Solicitações (Últimos {data.length} dias)</div>
       <div className="flex gap-4 mb-2">
-        <span className="flex items-center gap-1 text-[9px] text-white/50"><span className="w-4 h-0.5 inline-block rounded" style={{ backgroundColor: "#36b85c" }} /> Solicitações</span>
-        <span className="flex items-center gap-1 text-[9px] text-white/50"><span className="w-4 h-0.5 inline-block rounded" style={{ backgroundColor: "#2a5aa8" }} /> Aprovações</span>
-        <span className="flex items-center gap-1 text-[9px] text-white/50"><span className="w-4 h-0.5 bg-yellow-400 inline-block rounded" /> Pendentes</span>
+        <span className="flex items-center gap-1 text-[9px] text-white/50">
+          <span className="w-4 h-0.5 inline-block rounded" style={{ backgroundColor: "#36b85c" }} /> Solicitações
+        </span>
+        <span className="flex items-center gap-1 text-[9px] text-white/50">
+          <span className="w-4 h-0.5 inline-block rounded" style={{ backgroundColor: "#2a5aa8" }} /> Aprovações
+        </span>
+        <span className="flex items-center gap-1 text-[9px] text-white/50">
+          <span className="w-4 h-0.5 bg-yellow-400 inline-block rounded" /> Pendentes
+        </span>
       </div>
       <ResponsiveContainer width="100%" height={190}>
         <LineChart data={data} margin={{ left: -10, right: 10, top: 5, bottom: 0 }}>
