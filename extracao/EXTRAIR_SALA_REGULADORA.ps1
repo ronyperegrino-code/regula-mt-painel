@@ -1,7 +1,7 @@
 # =============================================================================
 # EXTRAIR_SALA_REGULADORA.ps1
-# Extrai TODAS as solicitações hospitalares do SISREG sem filtro de hospital
-# e sem filtro de caráter, gerando dois CSVs:
+# Extrai TODAS as solicitacoes hospitalares do SISREG sem filtro de hospital
+# e sem filtro de carater, gerando dois CSVs:
 #   01_eletivo_linha_a_linha.csv
 #   01_urgente_linha_a_linha.csv
 #
@@ -19,7 +19,7 @@ param(
 
 $ErrorActionPreference = "Stop"
 
-# ── Config ───────────────────────────────────────────────────────────────────
+# -- Config -------------------------------------------------------------------
 if ([string]::IsNullOrWhiteSpace($CfgPath)) {
     $CfgPath = Join-Path $PSScriptRoot "configuracao_sql_acesso.txt"
 }
@@ -50,12 +50,12 @@ if ([string]::IsNullOrWhiteSpace($OutDir)) {
 
 $NL = [char]13 + [char]10
 
-# ── DECLAREs ─────────────────────────────────────────────────────────────────
+# -- DECLAREs -----------------------------------------------------------------
 $Decl  = "SET NOCOUNT ON;" + $NL
 $Decl += "DECLARE @Inicio  date = '" + $AnoInicio.ToString() + "-01-01';" + $NL
 $Decl += "DECLARE @AnoFim  int  = " + $AnoFim.ToString() + ";" + $NL
 
-# ── Leitura de SQL ────────────────────────────────────────────────────────────
+# -- Leitura de SQL -----------------------------------------------------------
 function Read-Sql {
     param([string]$Nome)
     $path = Join-Path $PSScriptRoot ("sql\" + $Nome)
@@ -63,7 +63,7 @@ function Read-Sql {
     return $Decl + [System.IO.File]::ReadAllText($path, [System.Text.Encoding]::UTF8)
 }
 
-# ── Exportação para CSV ───────────────────────────────────────────────────────
+# -- Exportacao para CSV ------------------------------------------------------
 function Export-Sql {
     param([string]$Arquivo, [string]$Sql)
     $cmd = $conn.CreateCommand()
@@ -93,7 +93,7 @@ function Export-Sql {
     return $n
 }
 
-# ── Conexão ───────────────────────────────────────────────────────────────────
+# -- Conexao ------------------------------------------------------------------
 $connStr = if ([string]::IsNullOrWhiteSpace($user)) {
     "Server=$server;Database=$database;Integrated Security=True;Connection Timeout=30;"
 } else {
@@ -102,8 +102,8 @@ $connStr = if ([string]::IsNullOrWhiteSpace($user)) {
 
 Write-Host ""
 Write-Host "============================================================"
-Write-Host "  EXTRACAO SALA DO REGULADOR — VW_HOSPITALAR"
-Write-Host ("  Periodo  : {0} — {1}" -f $AnoInicio, $AnoFim)
+Write-Host "  EXTRACAO SALA DO REGULADOR - VW_HOSPITALAR"
+Write-Host ("  Periodo  : {0} a {1}" -f $AnoInicio, $AnoFim)
 Write-Host ("  Saida    : {0}" -f $OutDir)
 Write-Host ("  Servidor : {0} / {1}" -f $server, $database)
 Write-Host "============================================================"
@@ -113,7 +113,7 @@ $conn = New-Object System.Data.SqlClient.SqlConnection($connStr)
 $conn.Open()
 Write-Host "[OK] Conexao SQL aberta."
 
-# ── [1] Base: cria #ReguladorBase sem filtros ─────────────────────────────────
+# -- [1] Base: cria #ReguladorBase sem filtros --------------------------------
 Write-Host ""
 Write-Host "[1/3] Criando base sem filtros de hospital e carater..."
 $cmdBase = $conn.CreateCommand()
@@ -122,19 +122,19 @@ $cmdBase.CommandText    = (Read-Sql "sql_regulador_base.sql")
 [void]$cmdBase.ExecuteNonQuery()
 Write-Host "  [OK] #ReguladorBase populada."
 
-# ── [2] Eletivo ───────────────────────────────────────────────────────────────
+# -- [2] Eletivo --------------------------------------------------------------
 Write-Host ""
 Write-Host "[2/3] Exportando eletivo..."
 $nElet = Export-Sql "01_eletivo_linha_a_linha.csv" (Read-Sql "sql_regulador_eletivo.sql")
 
-# ── [3] Urgente ───────────────────────────────────────────────────────────────
+# -- [3] Urgente --------------------------------------------------------------
 Write-Host ""
 Write-Host "[3/3] Exportando urgente..."
 $nUrg = Export-Sql "01_urgente_linha_a_linha.csv" (Read-Sql "sql_regulador_urgente.sql")
 
 $conn.Close()
 
-# ── Resumo ────────────────────────────────────────────────────────────────────
+# -- Resumo -------------------------------------------------------------------
 Write-Host ""
 Write-Host "============================================================"
 Write-Host " EXTRACAO CONCLUIDA"
