@@ -1,21 +1,126 @@
 ﻿hospital,solicitacoes,aprovacoes,uti,enfermaria,tempo_medio,mediana,pct_atendidas
-Santa Casa De Rondonopolis,38899,33787,4309,29478,14 d,4 d,87
-Hospital Municipal De Cuiaba E P S Dr Leony Palma Carvalho,24896,23954,524,23430,18 d,4 d,96
-Hospital E Pronto Socorro Municipal De Varzea Grande,17850,17308,1009,16299,6 d,1 d,97
-Hospital Regional De Agua Boa,17724,14245,559,13686,23 d,5 d,80
-Hospital Regional De Alta Floresta Albert Sabin,17368,15405,1,15404,3 d,1 d,89
-Hospital Regional Dr Antonio Fontes,13745,9150,169,8981,11 d,2 d,67
-Hospital Regional Dr Antonio Fontes Anexo I,13352,9837,411,9426,20 d,10 d,74
-Hospital Municipal De Juina Dr Hideo Sakuno,11771,8513,0,8513,2 d,2 d,72
-Hospital Das Clinicas Primavera Primavera Do Leste,9730,8828,869,7959,34 d,25 d,91
-Hospital Municipal Milton Pessoa Morbeck,8656,4725,114,4611,65 d,22 d,55
-Hospital Regional De Peixoto De Azevedo,7988,6919,2,6917,6 d,2 d,87
-Hospital Regional De Colider,7815,2007,62,1945,37 d,2 d,26
-Hospital E Pronto Socorro Municipal De Cuiaba,6718,5345,397,4948,140 d,55 d,80
-Hospital Municipal Prefeito Joao Abreu Luz,4507,4404,0,4404,2 d,1 d,98
-Casa De Saude Paulo De Tarso E Caps Paulo De Tarso,3625,1904,0,1904,- d,- d,53
-Hospital Regional De Sorriso,2477,1641,54,1587,5 d,3 d,66
-Hospital Regional Jorge De Abreu,1815,1045,18,1027,10 d,8 d,58
-Hospital Munic De Juara Hosp Munic Elidia Machietto Santillo,1796,1350,0,1350,47 d,7 d,75
-Hospital Municipal De Jaciara,882,556,0,556,23 d,8 d,63
-Hospital Central De Alta Complexidade De Mato Grosso,844,711,31,680,7 d,5 d,84
+(sem nome),503512,267068,74044,193024,16 d,1 d,53
+Santa Casa De Rondonopolis,38946,33838,5849,27989,5 d,1 d,87
+Hospital Santa Helena,27509,26109,1184,24925,7 d,1 d,95
+Hospital Municipal De Cuiaba E P S Dr Leony Palma Carvalho,24922,23995,650,23345,1 d,< 1 d,96
+Hospital Estadual Santa Casa,21100,17447,297,17150,37 d,1 d,83
+Hospital E Pronto Socorro Municipal De Varzea Grande,17879,17332,1121,16211,< 1 d,< 1 d,97
+Hospital Geral E Maternidade De Cuiaba,15151,13722,908,12814,4 d,1 d,91
+Hospital Municipal Arlete Daisy Cichetti De Brito,13730,13226,20,13206,< 1 d,< 1 d,96
+Hospital Regional Hilda Strenger Ribeiro Nova Mutum,13482,11550,935,10615,7 d,1 d,86
+Hospital Universitario Julio Muller Ebserh,12932,8665,1510,7155,35 d,1 d,67
+Hosp De Ref Saude Da Familia Dr Antonio Dos S Muniz,12577,11265,4,11261,< 1 d,< 1 d,90
+Hospital Regional De Agua Boa,11856,9479,415,9064,9 d,1 d,80
+Hospital Vale Do Guapore,11822,9597,54,9543,4 d,1 d,81
+Hospital Municipal De Juina Dr Hideo Sakuno,11782,8522,29,8493,2 d,2 d,72
+Hospital De Cancer De Mato Grosso,11629,10118,386,9732,12 d,1 d,87
+Hospital Regional De Alta Floresta Albert Sabin,10849,9628,55,9573,2 d,1 d,89
+Hospital Das Clinicas Primavera Primavera Do Leste,9961,8996,953,8043,11 d,1 d,90
+Hospital Sao Lucas Lucas Do Rio Verde,9530,8617,89,8528,9 d,1 d,90
+Hospital Regional Dr Antonio Fontes,9069,6169,418,5751,8 d,1 d,68
+Hospital Reg Irma Elza Giovanella,8825,7953,1525,6428,4 d,1 d,90
+Hospital Municipal Milton Pessoa Morbeck,8662,4732,218,4514,27 d,2 d,55
+Hospital E Maternidade Sao Lucas Primavera Do Leste,8047,7398,32,7366,5 d,1 d,92
+Hospital Regional De Peixoto De Azevedo,7998,6933,16,6917,2 d,1 d,87
+Hospital Regional Dr Antonio Fontes Anexo I,7938,6916,314,6602,5 d,1 d,87
+Hospital E Pronto Socorro Municipal De Cuiaba,6913,5521,476,5045,92 d,14 d,80
+Hospital Geral De Pocone Dr Nicolau Fontanilas Frageli,5449,4835,2,4833,7 d,2 d,89
+Hospital Santo Antonio,5199,4621,45,4576,2 d,2 d,89
+Hospital Municipal Sao Joao Batista,5186,4277,10,4267,8 d,2 d,82
+Hospital Quality,4897,4359,0,4359,9 d,5 d,89
+Hospital Municipal Prefeito Joao Abreu Luz,4621,4513,0,4513,1 d,1 d,98
+Hospital Regional De Colider,4525,1257,115,1142,7 d,1 d,28
+Casa De Saude Paulo De Tarso E Caps Paulo De Tarso,3697,1941,6,1935,6 d,3 d,53
+Metropolitano Hospital Estadual Lousite Ferreira Da Silva,2981,2335,420,1915,5 d,1 d,78
+Hospital Municipal Nossa Senhora Do Rosario,2892,2625,39,2586,< 1 d,1 d,91
+Hospital Evangelico De Mato Grosso,2788,2565,0,2565,< 1 d,1 d,92
+Hospital E Maternidade Santa Angela Tangara Da Serra,2619,2428,106,2322,1 d,1 d,93
+Hospital Municipal De Matupa,2182,2087,7,2080,3 d,1 d,96
+Hospital Municipal Dr Daercio Oliveira Moraes,1986,1767,0,1767,8 d,6 d,89
+Hospital Das Clinicas Vida E Saude Tangara Da Serra,1922,1778,44,1734,1 d,1 d,93
+Hospital E Maternidade Alipio Candido Da Silva,1807,1713,0,1713,1 d,1 d,95
+Ciaps Hospital Adauto Botelho,1782,1691,0,1691,< 1 d,1 d,95
+Hospital Otorrino,1512,1294,1,1293,9 d,6 d,86
+Hospital Regional Jorge De Abreu,1511,874,33,841,6 d,1 d,58
+Hospital Municipal De Confresa,1441,1254,7,1247,4 d,1 d,87
+Hospital E Maternidade Nova Olimpia,1424,1395,0,1395,14 d,1 d,98
+Hospital Municipal Sao Benedito De Cuiaba,1408,1169,518,651,6 d,1 d,83
+Hospital Regional De Sorriso,1394,921,130,791,3 d,1 d,66
+Ighasmat,1326,1085,0,1085,6 d,4 d,82
+Hospital Municipal De Terra Nova Do Norte,1218,1159,0,1159,1 d,1 d,95
+Hospital E Maternidade Dr Lauro Tarcisio Preste De Oliveira,1176,1005,24,981,9 d,1 d,85
+Hospital Municipal Medio Norte,1117,1082,0,1082,2 d,1 d,97
+Hospital Munic De Juara Hosp Munic Elidia Machietto Santillo,1093,951,0,951,16 d,1 d,87
+Hospital Municipal Sao Joao Bosco,1006,923,0,923,2 d,2 d,92
+Hospital Sao Lucas Juina,1002,886,57,829,< 1 d,1 d,88
+Hospital Maternidade 13 De Maio Vila Romana,893,722,3,719,9 d,6 d,81
+Hospital Municipal De Jaciara,886,558,0,558,23 d,8 d,63
+Hospital E Maternidade Sta Maria,884,769,5,764,12 d,1 d,87
+Hospital Maternidade Municipal De Barra Do Bugres Rene Bar,879,844,0,844,1 d,< 1 d,96
+Hospital Central De Alta Complexidade De Mato Grosso,850,718,50,668,7 d,4 d,84
+Hospital Regional De Caceres Dr Antonio Fontes Unidade Ii,800,587,23,564,7 d,1 d,73
+Hosp Mun Maria Dolores T Jordao Novo Sao Joaquim,751,645,0,645,2 d,1 d,86
+Hospital Municipal De Juara Elidia Maschietto Santillo,747,438,0,438,8 d,1 d,59
+Hospital Municipal Dr Manuela Machado Barbosa Gomes,643,550,0,550,2 d,1 d,86
+Hospital Municipal Coracao De Jesus,439,385,8,377,4 d,2 d,88
+Hospital Municipal Euclides Horst,424,305,0,305,< 1 d,1 d,72
+Hospital Regional De Caceres Dr Antonio Fontes Unidade I,412,213,38,175,8 d,1 d,52
+Hospital Santa Rita,411,322,1,321,22 d,10 d,78
+Hospital De Olhos De Cuiaba,408,134,1,133,93 d,63 d,33
+Hospital E Maternidade Sao Joao Batista,364,305,3,302,7 d,4 d,84
+Cmo Centro Matogrossense De Oftalmologia,313,160,0,160,58 d,43 d,51
+Hospital Municipal Andre Maggi Colniza,285,170,0,170,44 d,23 d,60
+Instituto Dois Pinheiros,275,234,0,234,8 d,5 d,85
+Hospital Municipal De Vila Rica,274,194,0,194,15 d,4 d,71
+Hospital Municipal De Rosario Oeste,230,185,0,185,52 d,10 d,80
+Mater Clin,222,169,6,163,16 d,5 d,76
+Coc Centro Oftalmologico De Caceres,221,158,1,157,14 d,6 d,71
+Hospital E Maternidade Amo A Vida,159,136,0,136,3 d,2 d,86
+Hospital E Maternidade Santa Rita,151,112,1,111,6 d,1 d,74
+Hospital Municipal De General Carneiro,136,109,0,109,4 d,2 d,80
+Hospital Sao Judas Tadeu,113,103,0,103,10 d,7 d,91
+Viventi Hospital,109,74,0,74,4 d,2 d,68
+Hospital E Maternidade Sao Mateus,108,95,1,94,2 d,1 d,88
+Hospital Candido Portinari,98,80,0,80,10 d,9 d,82
+Hospital Municipal Bom Jesus,84,78,0,78,4 d,3 d,93
+Hospital E Maternidade Nossa Senhora Aparecida,76,69,1,68,1 d,1 d,91
+Maternidade Dr Francisco Lustosa De Figueiredo,61,11,0,11,9 d,2 d,18
+Hospital Municipal Osvino Trentini,55,44,0,44,1 d,1 d,80
+Hospital De Olhos De Varzea Grande,54,33,4,29,58 d,21 d,61
+Unidade Mista De Saude Municipal Fernando Antonio De Morais,45,43,0,43,118 d,72 d,96
+Femina Hospital Infantil E Maternidade,42,11,4,7,25 d,8 d,26
+Hospital E Maternidade Dois Pinheiros,33,20,0,20,6 d,6 d,61
+Cardiocine,33,21,5,16,23 d,12 d,64
+Hospital Municipal Cristo Rei,28,22,0,22,3 d,2 d,79
+Hospital Sant Ana,27,21,0,21,13 d,8 d,78
+Fundacao Hospitalar De Saude Municipal De Itauba,26,11,0,11,2 d,1 d,42
+Hospital E Maternidade Jacarandas,24,24,0,24,8 d,6 d,100
+Hospital Geral De Pocone,18,9,0,9,4 d,4 d,50
+Medicina Nuclear,17,10,2,8,25 d,6 d,59
+Hospital E Maternidade Das Nacoes,17,7,1,6,14 d,2 d,41
+Projeto Catarata,15,6,0,6,13 d,1 d,40
+Hospital E Maternidade Laura Vicuna,14,11,0,11,11 d,15 d,79
+Unidade De Pronto Atendimento Municipal Ari Torres,13,7,2,5,< 1 d,< 1 d,54
+Hospital Municipal De Querencia,12,5,0,5,3 d,2 d,42
+Hospital Municipal Santo Antonio Aripuana,11,7,0,7,11 d,8 d,64
+Grupo Olhares Saude E Bem Estar,11,6,5,1,7 d,6 d,55
+Hospital Municipal Lorena Parode,9,6,0,6,2 d,2 d,67
+C A M,9,4,2,2,10 d,2 d,44
+Hospital E Maternidade Cristo Redentor,9,7,0,7,3 d,1 d,78
+Hospital De Olhos De Rondonopolis,7,5,1,4,< 1 d,1 d,71
+Hospital E Maternidade Sao Lucas Sociedade Medica Sao Lucas,6,3,0,3,15 d,19 d,50
+Inematt Instituto Nefrologico Ltda,6,2,0,2,1 d,1 d,33
+Gasperi Servicos Medicos,6,1,0,1,- d,- d,17
+Policlinica Integrada,5,5,0,5,1 d,1 d,100
+Hospital Municipal De Gaucha Do Norte,5,2,0,2,1 d,1 d,40
+Pa Pronto Atendimento De Nova Canaa Do Norte,5,3,0,3,28 d,28 d,60
+Hospital Municipal Cristyan Mary Da Silveira E Lima,4,3,0,3,2 d,2 d,75
+Upa 24Hs Dr Thiago Fernando Sandri Dos Santos,4,2,0,2,26 d,26 d,50
+Hospital Municipal Sebastiao Antonio Da Costa,4,4,0,4,1 d,1 d,100
+Hospital O Bom Samaritano,4,0,0,4,- d,- d,0
+Hbento,4,1,0,1,18 d,18 d,25
+Pronto Atendimento Municipal De Arenapolis,3,1,0,1,- d,- d,33
+Hospital Municipal De Apiacas,2,2,0,2,33 d,33 d,100
+Hospital Municipal De Sao Jose Do Rio Claro,2,0,0,2,- d,- d,0
+Associacao Santa Madre Paulina,1,1,0,1,< 1 d,< 1 d,100
+Hospital Santa Ines,1,1,0,1,5 d,5 d,100
