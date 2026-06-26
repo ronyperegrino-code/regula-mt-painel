@@ -1,19 +1,21 @@
 ﻿hospital,solicitacoes,aprovacoes,uti,enfermaria,tempo_medio,mediana,pct_atendidas
-Santa Casa De Rondonopolis,38021,33051,4214,28837,13 d,4 d,87
-Hospital E Pronto Socorro Municipal De Varzea Grande,17550,17009,1003,16006,6 d,1 d,97
-Hospital Regional De Agua Boa,17536,14118,558,13560,23 d,6 d,81
-Hospital Regional De Alta Floresta Albert Sabin,17123,15203,1,15202,3 d,1 d,89
-Hospital Regional Dr Antonio Fontes,13715,9128,169,8959,10 d,2 d,67
-Hospital Regional Dr Antonio Fontes Anexo I,13150,9667,410,9257,20 d,10 d,74
-Hospital Municipal De Juina Dr Hideo Sakuno,11628,8403,0,8403,2 d,2 d,72
+Santa Casa De Rondonopolis,38899,33787,4309,29478,14 d,4 d,87
+Hospital Municipal De Cuiaba E P S Dr Leony Palma Carvalho,24896,23954,524,23430,18 d,4 d,96
+Hospital E Pronto Socorro Municipal De Varzea Grande,17850,17308,1009,16299,6 d,1 d,97
+Hospital Regional De Agua Boa,17724,14245,559,13686,23 d,5 d,80
+Hospital Regional De Alta Floresta Albert Sabin,17368,15405,1,15404,3 d,1 d,89
+Hospital Regional Dr Antonio Fontes,13745,9150,169,8981,11 d,2 d,67
+Hospital Regional Dr Antonio Fontes Anexo I,13352,9837,411,9426,20 d,10 d,74
+Hospital Municipal De Juina Dr Hideo Sakuno,11771,8513,0,8513,2 d,2 d,72
 Hospital Das Clinicas Primavera Primavera Do Leste,9730,8828,869,7959,34 d,25 d,91
-Hospital Municipal Milton Pessoa Morbeck,8419,4634,113,4521,64 d,22 d,55
-Hospital Regional De Peixoto De Azevedo,7822,6755,2,6753,6 d,2 d,86
-Hospital Regional De Colider,7704,2010,62,1948,37 d,2 d,26
+Hospital Municipal Milton Pessoa Morbeck,8656,4725,114,4611,65 d,22 d,55
+Hospital Regional De Peixoto De Azevedo,7988,6919,2,6917,6 d,2 d,87
+Hospital Regional De Colider,7815,2007,62,1945,37 d,2 d,26
 Hospital E Pronto Socorro Municipal De Cuiaba,6718,5345,397,4948,140 d,55 d,80
 Hospital Municipal Prefeito Joao Abreu Luz,4507,4404,0,4404,2 d,1 d,98
 Casa De Saude Paulo De Tarso E Caps Paulo De Tarso,3625,1904,0,1904,- d,- d,53
-Hospital Regional De Sorriso,2446,1630,55,1575,5 d,3 d,67
-Hospital Regional Jorge De Abreu,1806,1037,18,1019,10 d,8 d,57
+Hospital Regional De Sorriso,2477,1641,54,1587,5 d,3 d,66
+Hospital Regional Jorge De Abreu,1815,1045,18,1027,10 d,8 d,58
 Hospital Munic De Juara Hosp Munic Elidia Machietto Santillo,1796,1350,0,1350,47 d,7 d,75
-Hospital Municipal De Jaciara,809,501,0,501,24 d,8 d,62
+Hospital Municipal De Jaciara,882,556,0,556,23 d,8 d,63
+Hospital Central De Alta Complexidade De Mato Grosso,844,711,31,680,7 d,5 d,84
