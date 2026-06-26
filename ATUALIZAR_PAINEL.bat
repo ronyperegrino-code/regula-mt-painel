@@ -5,27 +5,27 @@ setlocal
 set "REPO=%~dp0"
 if "%REPO:~-1%"=="\" set "REPO=%REPO:~0,-1%"
 
-set "FONTE=%USERPROFILE%\Desktop\SES-MT\SISREG_ANALISE\saida\INIQUIDADE_ACESSO"
+set "FONTE=%USERPROFILE%\Desktop\SES-MT\SISREG_ANALISE\saida\SALA_REGULADORA"
 set "SCRIPT=%REPO%\pipeline_sala_reguladora.py"
 
 echo.
 echo ============================================================
-echo   PAINEL SALA REGULADORA — Atualizacao Vercel
+echo   PAINEL SALA REGULADORA - Atualizacao Vercel
 echo   %date% %time%
 echo ============================================================
 echo.
 
-:: -- 1. Valida fonte de dados -------------------------------------------------
+:: Valida pasta de dados
 if not exist "%FONTE%" (
     echo [ERRO] Pasta de dados nao encontrada:
     echo        %FONTE%
     echo.
-    echo Verifique se o projeto SISREG_ANALISE esta acessivel.
+    echo Execute EXTRAIR_SALA_REGULADORA.bat primeiro para gerar os CSVs.
     pause
     exit /b 1
 )
 
-:: -- 2. Gera os CSVs ----------------------------------------------------------
+:: Gera os CSVs
 echo [1/3] Gerando hospitais.csv e evolucao.csv...
 echo.
 python "%SCRIPT%" --dir "%FONTE%"
@@ -36,11 +36,10 @@ if errorlevel 1 (
     exit /b 1
 )
 
-:: -- 3. Git commit -------------------------------------------------------------
+:: Git add
 echo.
 echo [2/3] Commitando dados atualizados...
 cd /d "%REPO%"
-
 git add public\hospitais.csv public\evolucao.csv
 if errorlevel 1 (
     echo [ERRO] git add falhou.
@@ -66,7 +65,7 @@ if errorlevel 1 (
     exit /b 1
 )
 
-:: -- 4. Git push ? Vercel ------------------------------------------------------
+:: Git push
 echo.
 echo [3/3] Enviando para GitHub (Vercel redeploy automatico)...
 git push origin main
@@ -79,7 +78,7 @@ if errorlevel 1 (
 :fim
 echo.
 echo ============================================================
-echo   CONCLUIDO — Vercel redeploy iniciado automaticamente.
+echo   CONCLUIDO - Vercel redeploy iniciado automaticamente.
 echo   Acesse: https://regula-mt-painel.vercel.app
 echo ============================================================
 echo.

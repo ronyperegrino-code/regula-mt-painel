@@ -1,13 +1,13 @@
 @echo off
-chcp 65001 >nul
-title Sala do Regulador — Extracao VW_HOSPITALAR
+chcp 65001 > nul
+setlocal
 
 set "DIR=%~dp0"
 if "%DIR:~-1%"=="\" set "DIR=%DIR:~0,-1%"
 
 echo.
 echo ============================================================
-echo   SALA DO REGULADOR — Extracao Completa
+echo   SALA DO REGULADOR - Extracao Completa
 echo   Gera: 01_eletivo_linha_a_linha.csv
 echo         01_urgente_linha_a_linha.csv
 echo   (sem filtro de hospital, sem filtro de carater)
@@ -25,3 +25,4 @@ if errorlevel 1 (
 
 echo.
 pause
+endlocal
