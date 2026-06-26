@@ -1,0 +1,51 @@
+﻿# =============================================================================
+# CONFIGURACAO DE ACESSO E HOSPITAIS - SISREG / INIQUIDADE DE ACESSO
+# =============================================================================
+
+# --- BANCO DE DADOS ---
+SERVER   = 10.15.1.71
+DATABASE = SES
+SQL_USER = sisreg_sureg
+SQL_PASS = Regul@2022
+
+# --- DIRETORIOS E PERIODO ---
+BASE_DIR   = C:\Users\julianomelo\Desktop\SES-MT\SISREG_ANALISE\saida
+ANO_INICIO = 2024
+ANO_FIM    = 2026
+
+# =============================================================================
+# HOSPITAIS POR GRUPO
+# No menu: [R] Regionais/Santa Casas   [M] Municipais   [O] Outros
+# Para adicionar hospital: CNES = Nome  (dentro do grupo correto)
+# =============================================================================
+
+[REGIONAIS_E_SANTA_CASAS]
+2471345 = Hospital Regional de Alta Floresta Albert Sabin
+2392410 = Hospital Regional de Colider
+6085423 = Hospital Regional Jorge de Abreu
+2534460 = Hospital Regional de Caceres Dr Antonio Fontes Unidade I
+2395037 = Hospital Regional Dr. Antonio Fontes Anexo I
+0901725 = Hospital Regional Hilda Strenger Ribeiro Nova Mutum
+2795655 = Hospital Regional de Sorriso
+2473046 = Hospital Regional de Agua Boa
+2699842 = Hospital Regional de Peixoto de Azevedo
+2396866 = Hospital Santa Casa de Misericordia de Rondonópolis
+5558638 = Hospital Central de Alta Complexidade de Mato Grosso
+
+[MUNICIPAIS]
+2395886 = Hospital Municipal Milton Pessoa Morbeck
+2391635 = Hospital e Pronto Socorro Municipal de Varzea Grande
+9209352 = Hospital Municipal de Cuiaba Dr. Leony Palma Carvalho
+3269728 = Hospital Municipal de Jaciara
+4069803 = Hospital Municipal de Juina Dr. Hideo Sakuno
+2495015 = Hospital Municipal e Pronto Socorro de Cuiaba
+2392704 = Hospital Municipal Elidia Machietto de Juara
+2604426 = Hospital Municipal Prefeito Joao Abreu Luz
+
+[OUTROS]
+2396424 = Casa de Saude Paulo de Tarso
+2397676 = Hospital das Clinicas de Primavera
+2397684 = Hospital e Maternidade Sao Joao Batista
+2397501 = Hospital e Maternidade Sao Lucas Primavera Ltda
+2655411 = Hospital Universitario Julio Muller
+2752654 = Hospital Vale do Guapore

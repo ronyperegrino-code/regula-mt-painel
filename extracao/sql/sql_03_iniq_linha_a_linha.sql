@@ -1,0 +1,1 @@
+SELECT * FROM #Eventos ORDER BY Data_Solicitacao, codigo_solicitacao;
