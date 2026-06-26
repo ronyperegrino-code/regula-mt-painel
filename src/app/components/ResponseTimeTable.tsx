@@ -24,6 +24,7 @@ export function ResponseTimeTable({ hospitals }: Props) {
     <div className="bg-card border border-white/8 rounded p-3 h-full">
       <div className="text-[10px] uppercase tracking-widest text-white/50 mb-0.5">Tempo de Resposta das Unidades Hospitalares</div>
       <div className="text-[9px] text-white/30 mb-2">Tempo médio entre envio da busca de vaga e resposta (h/mm)</div>
+      <div className="overflow-y-auto max-h-[280px]">
       <div className="grid grid-cols-[1fr_auto_auto_auto] gap-x-3 gap-y-0">
         <div className="text-[9px] text-white/30 pb-1 border-b border-white/8">Unidade Hospitalar</div>
         <div className="text-[9px] text-white/30 pb-1 border-b border-white/8 text-center">Médio</div>
@@ -39,6 +40,7 @@ export function ResponseTimeTable({ hospitals }: Props) {
             </div>
           </Fragment>
         ))}
+      </div>
       </div>
     </div>
   );

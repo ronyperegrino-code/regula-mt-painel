@@ -183,22 +183,26 @@ export default function App() {
               transInterHosp={pendentes.transInterHosp}
               outros={pendentes.outros}
             />
-            <div className="grid gap-2 mb-2" style={{ gridTemplateColumns: "1fr 1fr 1fr" }}>
+            {/* Linha 2 — Gráficos de barra (2 colunas iguais) */}
+            <div className="grid gap-2 mb-2" style={{ gridTemplateColumns: "1fr 1fr" }}>
               <AprovadosPorHospital hospitals={hospitals} />
               <UTIEnfermariaChart hospitals={hospitals} />
-              <ResponseTimeTable hospitals={hospitals} />
             </div>
+            {/* Linha 3 — Componentes menores (3 colunas) */}
             <div className="grid gap-2" style={{ gridTemplateColumns: "1fr 1fr 1fr" }}>
               <ApprovalRateTable hospitals={hospitals} />
               <EvolutionChart data={evolution} />
-              <DistributionDonut
-                uti={totalUTI}
-                enfermaria={totalEnf}
-                transInterHosp={pendentes.transInterHosp}
-                hemodinamica={pendentes.hemodinamica}
-                outros={pendentes.outros}
-                total={total}
-              />
+              <div className="flex flex-col gap-2">
+                <DistributionDonut
+                  uti={totalUTI}
+                  enfermaria={totalEnf}
+                  transInterHosp={pendentes.transInterHosp}
+                  hemodinamica={pendentes.hemodinamica}
+                  outros={pendentes.outros}
+                  total={total}
+                />
+                <ResponseTimeTable hospitals={hospitals} />
+              </div>
             </div>
           </div>
         ) : (

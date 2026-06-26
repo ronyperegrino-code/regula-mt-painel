@@ -34,8 +34,8 @@ export function AprovadosPorHospital({ hospitals }: Props) {
     <div className="bg-card border border-white/8 rounded p-3 h-full">
       <div className="text-[10px] uppercase tracking-widest text-white/50 mb-0.5">Aprovados por Unidade Hospitalar</div>
       <div className="text-[9px] text-white/30 mb-2">Total de aprovações no período</div>
-      <ResponsiveContainer width="100%" height={220}>
-        <BarChart data={data} layout="vertical" margin={{ left: 0, right: 30, top: 0, bottom: 0 }}>
+      <ResponsiveContainer width="100%" height={420}>
+        <BarChart data={data} layout="vertical" margin={{ left: 0, right: 40, top: 0, bottom: 0 }}>
           <CartesianGrid key="cg" horizontal={false} stroke="rgba(255,255,255,0.05)" />
           <XAxis key="xaxis" type="number" tick={{ fill: "#8a9bb0", fontSize: 9 }} axisLine={false} tickLine={false} />
           <YAxis
@@ -43,7 +43,7 @@ export function AprovadosPorHospital({ hospitals }: Props) {
             type="category"
             dataKey="hospital"
             tick={{ fill: "#8a9bb0", fontSize: 9 }}
-            width={120}
+            width={150}
             axisLine={false}
             tickLine={false}
           />
@@ -80,8 +80,8 @@ export function UTIEnfermariaChart({ hospitals }: Props) {
           <span className="w-2 h-2 rounded-sm inline-block" style={{ backgroundColor: "#36b85c" }} /> Enfermaria
         </span>
       </div>
-      <ResponsiveContainer width="100%" height={220}>
-        <BarChart data={data} layout="vertical" margin={{ left: 0, right: 30, top: 0, bottom: 0 }}>
+      <ResponsiveContainer width="100%" height={420}>
+        <BarChart data={data} layout="vertical" margin={{ left: 0, right: 40, top: 0, bottom: 0 }}>
           <CartesianGrid key="cg" horizontal={false} stroke="rgba(255,255,255,0.05)" />
           <XAxis key="xaxis" type="number" tick={{ fill: "#8a9bb0", fontSize: 9 }} axisLine={false} tickLine={false} />
           <YAxis
@@ -89,7 +89,7 @@ export function UTIEnfermariaChart({ hospitals }: Props) {
             type="category"
             dataKey="hospital"
             tick={{ fill: "#8a9bb0", fontSize: 9 }}
-            width={120}
+            width={150}
             axisLine={false}
             tickLine={false}
           />

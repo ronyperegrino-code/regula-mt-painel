@@ -29,6 +29,7 @@ export function ApprovalRateTable({ hospitals }: Props) {
       <div className="text-[10px] uppercase tracking-widest text-white/50 mb-0.5">Taxa de Aprovação por Unidade Hospitalar</div>
       <div className="text-[9px] text-white/30 mb-2">% de aprovações sobre o total de solicitações</div>
 
+      <div className="overflow-y-auto max-h-[360px]">
       <div className="grid grid-cols-[1fr_auto_auto_auto] gap-x-4 gap-y-0">
         <div className="text-[9px] text-white/30 pb-1 border-b border-white/8">Unidade Hospitalar</div>
         <div className="text-[9px] text-white/30 pb-1 border-b border-white/8 text-right">Solicitações</div>
@@ -55,6 +56,7 @@ export function ApprovalRateTable({ hospitals }: Props) {
         <div className="py-1.5 border-t border-white/15 text-center mt-1">
           <RateBadge value={total.taxa} />
         </div>
+      </div>
       </div>
     </div>
   );
